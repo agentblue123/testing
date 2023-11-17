@@ -180,7 +180,7 @@ var btnSubmit = document.querySelector(".submit");
       const next = document.querySelector(".next");
       next.setAttribute(
         "value",
-        "https://cobee-the-junior-programmer.netlify.app/contact.html"
+        "https://testing-swart-three.vercel.app/contact.html"
       );
     });
   }
