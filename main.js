@@ -173,14 +173,38 @@ var repeat = function (activeClass) {
 repeat();
 
 var btnSubmit = document.querySelector(".submit");
-  var modal = document.querySelector(".modal-container");
-  if (btnSubmit) {
-    btnSubmit.addEventListener("click", function () {
-      modal.classList.add("show");
-      const next = document.querySelector(".next");
-      next.setAttribute(
-        "value",
-        "https://testing-swart-three.vercel.app/contact.html"
-      );
-    });
-  }
+var modal = document.querySelector(".modal-container");
+if (btnSubmit) {
+  btnSubmit.addEventListener("click", function () {
+    modal.classList.add("show");
+    const next = document.querySelector(".next");
+    next.setAttribute(
+      "value",
+      "https://testing-swart-three.vercel.app/contact.html"
+    );
+  });
+}
+
+var splash = document.querySelector(".splash");
+    if (splash) {
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+          splash.style.display = "none";
+        }, 3000);
+      });
+    }
+
+    var animate = document.querySelector(".astronaut-takeoff");
+    if (animate) {
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+          animate.classList.add("animation");
+        }, 400);
+      });
+    }
+    var splashText = document.querySelector(".splash-text");
+    if (splashText) {
+      setTimeout(function () {
+        splashText.innerHTML = "Come in!";
+      }, 2000);
+    }
